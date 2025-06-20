@@ -260,18 +260,11 @@ table td:first-child {
 .contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  justify-content: center; /* Center vertically */
+  align-items: center;    /* Center horizontally */
+  min-height: auto;      /* Full viewport height */
+  text-align: center;
   padding: 20px;
-}
-
-@media (max-width: 768px) {
-  .contact {
-    justify-content: flex-start;
-    min-height: auto;
-    padding-top: 30px;
-  }
 }
 
 

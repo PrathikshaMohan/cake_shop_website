@@ -258,14 +258,22 @@ table td:first-child {
 
 /* Contact Section */
 .contact {
-  display: block;
+  display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center;    /* Center horizontally */
-  min-height: auto;      /* Full viewport height */
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   padding: 20px;
 }
+
+@media (max-width: 768px) {
+  .contact {
+    justify-content: flex-start;
+    min-height: auto;
+    padding-top: 30px;
+  }
+}
+
 
 .contact h2 {
   font-size: 36px;
